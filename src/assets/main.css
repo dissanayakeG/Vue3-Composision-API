@@ -1,0 +1,118 @@
+/* #app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-weight: normal;
+} */
+
+body {
+	border: 2px solid red;
+	margin: 1px;
+	min-height: calc(100vh - 6px);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.tracker-wrapper {
+	display: flex;
+	flex-direction: column;
+}
+
+.banner,
+.balance,
+.income-expenses-list,
+.form {
+	border: 2px solid blue;
+	margin-bottom: 10px;
+	padding: 10px;
+	display: flex;
+	justify-content: center;
+	font-size: large;
+}
+
+.saving,
+.expenses {
+	display: flex;
+	padding: 10px;
+}
+
+.saving {
+	color: rgb(99, 148, 49);
+}
+
+.expenses {
+	color: red;
+}
+
+.divider {
+	height: auto;
+	background-color: rgb(129, 123, 123);
+	width: 2px;
+}
+
+.income-expenses-list > ul {
+	text-decoration: none;
+	list-style-type: none;
+	display: flex;
+	flex-direction: column;
+}
+.item-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: start;
+}
+
+.item-wrapper .delete-button {
+	display: flex;
+	justify-content: center;
+	margin-right: 5px;
+	color: white;
+	background-color: red;
+	border-radius: 100%;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+	opacity: 0.5;
+	padding: 5px;
+}
+
+.item-wrapper:hover > .delete-button {
+	display: flex;
+	opacity: 1;
+}
+
+.item-wrapper .text {
+	display: flex;
+	border: 1px solid gray;
+	padding: 10px;
+	width: 150px;
+	margin-bottom: 5px;
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+}
+
+.input-element {
+	display: flex;
+	margin-bottom: 10px;
+}
+
+.input-element > label {
+	width: 100px;
+}
+
+.input-element > input {
+	height: 20px;
+	border-radius: 5px;
+}
+
+.plus {
+	color: green;
+}
+
+.minus {
+	color: red;
+}
