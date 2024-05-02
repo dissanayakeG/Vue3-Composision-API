@@ -21,9 +21,17 @@ const amount = ref("");
 const emits = defineEmits(["itemAdded"]);
 
 const submitForm = () => {
+	if (!text.value || !amount.value) {
+		alert("Empty values cannot be submitted!");
+		return;
+	}
+
 	emits("itemAdded", {
 		text: text.value,
 		amount: amount.value,
 	});
+
+	text.value = "";
+	amount.value = "";
 };
 </script>

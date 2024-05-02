@@ -116,3 +116,11 @@ body {
 .minus {
 	color: red;
 }
+
+.submit-btn {
+	background-color: blueviolet;
+	padding: 10px;
+	border-radius: 5px;
+	font-size: large;
+	color: white;
+}
