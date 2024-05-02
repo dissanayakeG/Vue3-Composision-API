@@ -32,7 +32,7 @@ const itemAdded = (obj) => {
 	expenses.value.push({
 		id: generateId(),
 		text: obj.text,
-		amount: obj.amount,
+		amount: Number(obj.amount),
 	});
 };
 
